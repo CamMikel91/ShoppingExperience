@@ -30,7 +30,7 @@ function saveToLocalStorage() {
             localStorage.setItem("CART", JSON.stringify(cart) );
             // Cart display refresh on each add to cart click event
             displayCart();
-        })
+        });
     }
 }
 
@@ -58,6 +58,7 @@ function displayCart() {
         </div>
         `;
     });
+    removeFromCart();
 }
 
 // Cart display for when the page first loads
