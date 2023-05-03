@@ -63,3 +63,8 @@ function displayCart() {
 
 // Cart display for when the page first loads
 displayCart();
+
+let checkoutButton = document.getElementById("checkoutButton");
+checkoutButton.addEventListener("click", () => {
+    window.location.href = "cart.html";
+});
