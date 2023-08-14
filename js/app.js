@@ -75,3 +75,21 @@ function updateQuantity() {
         })
     }
 }
+
+// jQuery document ready function
+$(document).ready(function() {
+
+    // Function to make sidebar sticky
+    let sideBarOrigin = $('aside').offset();
+    $(window).scroll(function() {
+        let scrollPosition = $('html').scrollTop();
+        if (sideBarOrigin.top < scrollPosition) {
+            $('aside').addClass('sticky');
+            $('aside').css({width: '17.9%'});
+        } else {
+            $('aside').removeClass('sticky');
+            $('aside').css({width: '20%'});
+        }
+    });
+
+});
