@@ -132,7 +132,7 @@ footer {
     padding: 15px 3% 0 0;
 }
 
-#cartButtons button {
+#cartButtons button, #paginateButtons button {
     background-color: #037DBE;
     border: none;
     border-radius: 3px;
@@ -141,10 +141,25 @@ footer {
     cursor: pointer;
 }
 
-#cartButtons #clearCartButton {
+#cartButtons #clearCartButton, #paginateButtons button {
     background-color: #EEEEEE;
     border: 1px solid #037DBE;
     color: #037DBE;
+}
+
+#paginateButtons button {
+    padding: 0.5%;
+    width: 8%;
+}
+
+#paginateButtons {
+    text-align: right;
+}
+
+#paginateButtons button:disabled {
+    border-color: #BBBBBB;
+    color: #BBBBBB;
+    cursor: auto;
 }
 
 .borderBottom {
