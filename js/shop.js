@@ -70,6 +70,7 @@ $('.next').on('click', function() {
         currentPage++;
         paginate();
         saveToLocalStorage();
+        fadeButtons();
     }
 });
 
@@ -80,6 +81,7 @@ $('.previous').on('click', function() {
     }
     paginate();
     saveToLocalStorage();
+    fadeButtons();
 });
 
 // Function to save cart info to local storage
